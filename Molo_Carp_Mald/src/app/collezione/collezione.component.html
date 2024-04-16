@@ -1,22 +1,16 @@
 <div class="row">
-    <div class="col-md" *ngFor="let scarpa of scarpe">
-      <div class="card text-center" style="width: 500px;">
-        <img class="card-img-top" [src]="scarpa.immagine" alt="Card image" class="img-fluid mx-auto d-block" width="600" height="300">
-        <div class="card-body">
-          <h4 class="card-title">{{ scarpa.nome }}</h4>
-          <p class="card-text">{{ scarpa.descrizione }}</p>
-          <p class="card-text">Prezzo: {{ scarpa.prezzo }} Euro</p>
-          <div class="form-group">
-            <label for="tagliaSelect">Seleziona Taglia:</label>
-            <select class="form-control" id="tagliaSelect" [(ngModel)]="selectedTaglia">
-              <option *ngFor="let taglia of scarpa.taglia">{{ taglia }}</option>
-            </select>
-          </div>
-          <p class="card-text">Data di uscita: {{ scarpa.dataUscita }}</p>
-          <p class="card-text">Colorazione: {{ scarpa.colorazione }}</p>
-          <a href="#" class="btn btn-primary">Compra ora!</a>
-        </div>
+  <div class="col-md" *ngFor="let scarpa of scarpe">
+    <div class="card text-center" style="width: 28rem;">
+      <img class="card-img-top" [src]="scarpa.immagine" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">{{ scarpa.nome }}</h5>
+        <p class="card-text">{{ scarpa.descrizione }}</p>
+        <p class="card-text">Prezzo: {{ scarpa.prezzo }} Euro</p>
+        <p class="card-text">Taglie disponibili: {{ scarpa.taglia.join(', ') }}</p>
+        <p class="card-text">Data di uscita: {{ scarpa.dataUscita }}</p>
+        <p class="card-text">Colorazione: {{ scarpa.colorazione }}</p>
+        <a href="#" class="btn btn-primary">Compra ora!</a>
       </div>
     </div>
   </div>
-  
+</div>

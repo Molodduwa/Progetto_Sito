@@ -7,14 +7,5 @@ import { Scarpa } from './models/model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    scarpe: Scarpa[];
-    // Inject HttpClient into your component or service.
-    constructor(private http: HttpClient) {}
-    ngOnInit(): void {
-    // Make the HTTP request:
-    this.http.get('/api').subscribe(data => {
-    // Read the result field from the JSON response.
-    this.scarpe = data["scarpe"];
-    });
-    }
+    
 }

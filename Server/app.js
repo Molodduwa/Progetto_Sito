@@ -18,8 +18,8 @@ app.get('/api', (req, res) => {
                 "prezzo": 190,
                 "taglia": [38, 39, 40, 41, 42],
                 "dataUscita": "2023-07-20",
-                "colorazione": "Nero/Oro",
-                "immagine": "imm7.jpg"
+                "colorazione": "Bianche/Oro",
+                "immagine": "https://raw.githubusercontent.com/Molodduwa/Progetto_Sito/main/Immagini/Air%20Carpio%204.jpeg"
             },
             {
                 "nome": "New Maria 2002R",
@@ -28,7 +28,7 @@ app.get('/api', (req, res) => {
                 "taglia": [36, 37, 38, 39, 40],
                 "dataUscita": "2023-09-05",
                 "colorazione": "Sabbia",
-                "immagine": "imm8.jpg"
+                "immagine": "https://raw.githubusercontent.com/Molodduwa/Progetto_Sito/main/Immagini/New%20Maldi%202002R.jpeg"
             },
             {
                 "nome": "Maldi's love",
@@ -36,8 +36,8 @@ app.get('/api', (req, res) => {
                 "prezzo": 120,
                 "taglia": [37, 38, 39, 40, 41],
                 "dataUscita": "2023-08-10",
-                "colorazione": "Multi",
-                "immagine": "imm9.jpg"
+                "colorazione": "Rosa",
+                "immagine": "https://raw.githubusercontent.com/Molodduwa/Progetto_Sito/main/Immagini/Maldi's%20lolly.jpeg"
             },
             {
                 "nome": "Obando Yeezy",
@@ -46,7 +46,7 @@ app.get('/api', (req, res) => {
                 "taglia": [39, 40, 41, 42, 43],
                 "dataUscita": "2023-10-15",
                 "colorazione": "Grigio Scuro",
-                "immagine": "imm10.jpg"
+                "immagine": "https://raw.githubusercontent.com/Molodduwa/Progetto_Sito/main/Immagini/Obando%20Yeezi.jpeg"
             },
             {
                 "nome": "Molo Dunk",
@@ -54,8 +54,8 @@ app.get('/api', (req, res) => {
                 "prezzo": 130,
                 "taglia": [38, 39, 40, 41, 42],
                 "dataUscita": "2023-11-20",
-                "colorazione": "Multi",
-                "immagine": "imm11.jpg"
+                "colorazione": "bianco marrone",
+                "immagine": "https://raw.githubusercontent.com/Molodduwa/Progetto_Sito/main/Immagini/Molo%20dunk.jpeg"
             },
             {
                 "nome": "Quiroz Jordan 1 Retrò",
@@ -63,8 +63,8 @@ app.get('/api', (req, res) => {
                 "prezzo": 250,
                 "taglia": [37, 38, 39, 40, 41],
                 "dataUscita": "2023-12-05",
-                "colorazione": "Multi",
-                "immagine": "imm12.jpg"
+                "colorazione": "Bianco Grgio",
+                "immagine": "https://raw.githubusercontent.com/Molodduwa/Progetto_Sito/main/Immagini/Quiroz%20Jordan.jpeg"
             }
         ]
     };
