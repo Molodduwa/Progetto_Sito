@@ -9,13 +9,13 @@ tasks:
   - name: Setup Server
     command: |
       cd Server
-      npm install                     # Installa le dipendenze del server
-      node server.js &                # Avvia il server Express (assicurati di avere server.js)
+      npm install                      
+      node app.js &                
 
   - name: Setup Molo_Carp_Mald
     command: |
       cd Molo_Carp_Mald
-      npm install                     # Installa le dipendenze di Angular
-      ng add @angular/cli@16          # Aggiunge Angular CLI (versione 16)
-      npm install ngx-bootstrap@4     # Installa ngx-bootstrap (versione 4)
-      ng serve --open &               # Avvia l'app Angular (apri automaticamente il browser)
+      npm install                      
+      ng add @angular/cli@16           
+      npm install ngx-bootstrap 
+      ng serve --open &                
