@@ -12,7 +12,7 @@ export class CollezioneComponent implements OnInit {
     constructor(private http: HttpClient) {}
     ngOnInit(): void {
     // Make the HTTP request:
-    this.http.get('https://3000-molodduwa-progettosito-qw9ym6b95zq.ws-eu110.gitpod.io/api').subscribe(data => {
+    this.http.get('https://3000-molodduwa-progettosito-6nw4kmgmd12.ws-eu111.gitpod.io/api').subscribe(data => {
     // Read the result field from the JSON response.
     this.scarpe = data["scarpe"];
     });

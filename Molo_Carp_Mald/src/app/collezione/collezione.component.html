@@ -1,14 +1,16 @@
-<div class="row">
-  <div class="col-md" *ngFor="let scarpa of scarpe">
-    <div class="card text-center" style="width: 28rem;">
-      <img class="card-img-top" [src]="scarpa.immagine" alt="Card image">
-      <div class="card-body">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let scarpa of scarpe">
+    <div class="card">
+      <img src="{{ scarpa.immagine }}" class="card-img-top" alt="Immagine scarpa">
+      <div class="card-body text-center"> <!-- Aggiunto text-center qui -->
         <h5 class="card-title">{{ scarpa.nome }}</h5>
         <p class="card-text">{{ scarpa.descrizione }}</p>
-        <p class="card-text">Prezzo: {{ scarpa.prezzo }} Euro</p>
-        <p class="card-text">Taglie disponibili: {{ scarpa.taglia.join(', ') }}</p>
-        <p class="card-text">Data di uscita: {{ scarpa.dataUscita }}</p>
-        <p class="card-text">Colorazione: {{ scarpa.colorazione }}</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Prezzo: {{ scarpa.prezzo }} Euro</li>
+          <li class="list-group-item">Taglie disponibili: {{ scarpa.taglia.join(', ') }}</li>
+          <li class="list-group-item">Data di uscita: {{ scarpa.dataUscita }}</li>
+          <li class="list-group-item">Colorazione: {{ scarpa.colorazione }}</li>
+        </ul>
         <a href="#" class="btn btn-primary">Compra ora!</a>
       </div>
     </div>
