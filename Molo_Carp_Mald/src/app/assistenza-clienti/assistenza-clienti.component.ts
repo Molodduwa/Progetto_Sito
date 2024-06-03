@@ -7,10 +7,10 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
   styleUrls: ['./assistenza-clienti.component.css']
 })
 export class AssistenzaClientiComponent {
-  nome: string = 'Nome del Sito';
-  creatore: string = 'Nome del Creatore';
-  email: string = 'email@esempio.com';
-  telefono: string = '+39 123 456 7890';
+  nome: string = 'LaCollection';
+  creatore: string = 'Andri, Nick e Jacopo';
+  email: string = 'INVII UNA EMAIL DIRETTAMENTE A NOI!';
+  telefono: string = '+39 349 232 2345';
   userEmail: string = '';
   messaggio: string = '';
 
