@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header text-center">
+            <h1>Assistenza Clienti</h1>
+          </div>
+          <div class="card-body">
+            <div class="text-center mb-4">
+              <p><strong>Sito: </strong> {{ nome }}</p>
+              <p><strong>Creato da: </strong> {{ creatore }}</p>
+              <p><strong>Email: </strong> <a href="mailto:{{ email }}">{{ email }}</a></p>
+              <p><strong>Telefono: </strong> <a href="tel:{{ telefono }}">{{ telefono }}</a></p>
+            </div>
+  
+            <h2 class="text-center">Segnala un errore</h2>
+            <form (ngSubmit)="inviaMessaggio()">
+              <div class="form-group">
+                <label for="userEmail">La tua email:</label>
+                <input type="email" id="userEmail" class="form-control" [(ngModel)]="userEmail" name="userEmail" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="messaggio">Messaggio:</label>
+                <textarea id="messaggio" class="form-control" [(ngModel)]="messaggio" name="messaggio" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mt-3 w-100">Invia</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
